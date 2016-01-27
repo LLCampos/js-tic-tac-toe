@@ -1,0 +1,92 @@
+header {
+    width: 500px;
+    margin: auto auto;
+    text-align: center;
+    font-size: 35px;
+}
+
+button {
+    margin: 50px auto;
+    width: 100px;
+    display: block;
+    color: white;
+    background-color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#game-area {
+    width: 308px;
+    height: 308px;
+    margin: auto auto;
+}
+
+.square {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    float:left;
+    cursor: pointer;
+}
+
+.square-not-empty {
+    cursor: default;
+}
+
+.square p {
+    font-weight: 900;
+    font-size: 60px;
+    top: 50%;
+    margin: 0px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+}
+
+#square-4,
+#square-1 {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#square-2 {
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#square-6,
+#square-3 {
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#square-6,
+#square-4 {
+    border-top: 2px solid #000;
+}
+
+#square-5 {
+    border: 2px solid #000;
+}
+
+#square-7 {
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+#square-9 {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+#square-8 {
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+
