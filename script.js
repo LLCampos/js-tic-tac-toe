@@ -1,4 +1,4 @@
-
+// updates view
 var render = function() {
     for (var square in board) {
         if (board[square] == "O") {
@@ -32,6 +32,7 @@ var newBoard = function() {
     render();
 };
 
+// check if the player with the symbol given in the argument won the game
 var checkWinner = function(symbol) {
     if (board["#square-1"] == symbol && board["#square-2"] == symbol && board["#square-3"] == symbol ||
         board["#square-4"] == symbol && board["#square-5"] == symbol && board["#square-6"] == symbol ||
@@ -45,6 +46,7 @@ var checkWinner = function(symbol) {
     }
 };
 
+// check if there's a draw
 var checkDraw = function() {
     var result = true;
     for (var square in board) {
@@ -66,11 +68,13 @@ var checkEnd = function(symbol) {
     }
 };
 
+// adds a piece to the square that was clicked
 var addPiece = function(event, symbol) {
     var squareClicked = '#' + $(event.target).attr("id");
     board[squareClicked] = symbol;
     render();
 };
+
 
 var turn = function(symbol) {
     $('.square').not('.square-not-empty').on('click', function(event) {
